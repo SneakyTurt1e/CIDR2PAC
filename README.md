@@ -4,11 +4,6 @@ A es6 script for covering CIDRs list to PAC proxy script.
 
 一个用于将 CIDR 列表文件转换为 PAC 自动代理文件的脚本。
 
-
-中国IP段CIDR列表地址：（项目中已自带 更新自20170218）
-
-http://www.ipdeny.com/ipblocks/data/aggregated/cn-aggregated.zone
-
 ## 使用姿势
 * 本地部署
 
@@ -45,14 +40,3 @@ curl -o my.pac http://127.0.0.1:8123
 # 待完成构建后，将构建的镜像执行为一个运行容器。
 # 访问容器的IP或域名，注意默认端口(8080)可能会被CaaS映射为其他端口。(如daocloud 自动转发到80)
 ```
-
-## 镜像
-
-该 PAC 文件将使国内 IP 网站跳过代理，非国内 IP 网站走 `127.0.0.1:1080` 的代理。
-
-
-Github Raw： https://rawgit.com/wspl/CIDR2PAC/master/whitelist.pac
-（可以直接贴到浏览器代理设置的 pac 地址栏中，当然首先得能访问 Github \_(:з」∠)\_）
-
-
-Container:  http://whitelist-cn-pac.daoapp.io/
