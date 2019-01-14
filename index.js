@@ -2,7 +2,7 @@ const fs = require('fs');
 const ip = require('ip');
 const package = require('./package.json')
 
-const CIDR_PATH = './cn-aggregated.zone.txt';
+const CIDR_PATH = './Mainland_China_IP.txt';
 const TEMPLATE_PAC_PATH = './whitelist_template.pac';
 const DIST_PAC_PATH = './whitelist.pac';
 const PROXY = 'SOCKS5 localhost:1080';
